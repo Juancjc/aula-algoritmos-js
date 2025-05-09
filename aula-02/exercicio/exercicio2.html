@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exerciocio 2</title>
+  </head>
+  <body>
+    <script>
+      // lê um dado de entrada
+      var num = prompt("Valor da conta: ");
+      var clientes = prompt("Clientes: ");
+
+      //garantindo que seja um número
+      num = Number(num);
+      clientes = Number(clientes);
+      var totalParaCada = num / clientes;
+
+      alert(
+        "Valor da conta: " + num + "\nTotal para cada cliente: " + totalParaCada
+      );
+    </script>
+  </body>
+</html>

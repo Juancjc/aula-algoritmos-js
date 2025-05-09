@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exerciocio 2</title>
+  </head>
+  <body>
+    <script>
+      var nota1 = prompt("1ª Nota:");
+      var nota2 = prompt("2ª Nota:");
+
+      nota1 = Number(nota1);
+      nota2 = Number(nota2);
+
+      var media = (nota1 + nota2) / 2;
+
+      alert(
+        "1ª Nota: " +
+          nota1.toFixed(1) +
+          "\n2ª Nota: " +
+          nota2.toFixed(1) +
+          "\nMédia: " +
+          media.toFixed(1)
+      );
+    </script>
+  </body>
+</html>

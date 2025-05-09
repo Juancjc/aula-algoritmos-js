@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Operadores Lógicos</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      label {
+        margin-right: 10px;
+      }
+      .resultado {
+        margin-top: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Operadores Lógicos em JavaScript</h1>
+
+    <p>Escolha os valores de <strong>p</strong> e <strong>q</strong>:</p>
+
+    <label
+      >p:
+      <select id="valorP">
+        <option value="true">Verdadeiro</option>
+        <option value="false">Falso</option>
+      </select>
+    </label>
+
+    <label
+      >q:
+      <select id="valorQ">
+        <option value="true">Verdadeiro</option>
+        <option value="false">Falso</option>
+      </select>
+    </label>
+
+    <button onclick="mostrarResultados()">Ver Resultados</button>
+
+    <div class="resultado" id="saida"></div>
+
+    <script>
+      function mostrarResultados() {
+        const p = document.getElementById("valorP").value === "true";
+        const q = document.getElementById("valorQ").value === "true";
+
+        const resultado = `
+        <p><strong>Negação (!p):</strong> ${!p}</p>
+        <p><strong>Conjunção (p && q):</strong> ${p && q}</p>
+        <p><strong>Disjunção (p || q):</strong> ${p || q}</p>
+      `;
+
+        document.getElementById("saida").innerHTML = resultado;
+      }
+    </script>
+  </body>
+</html>
