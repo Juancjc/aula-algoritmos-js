@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exemplos: if/else, for e switch/case</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f9f9f9;
+      }
+      section {
+        background: #fff;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+      }
+      h2 {
+        color: #333;
+      }
+      input {
+        margin-bottom: 10px;
+      }
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+      li {
+        padding: 2px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>💡 Exemplos de Estruturas Condicionais e de Repetição</h1>
+
+    <!-- IF/ELSE -->
+    <section>
+      <h2>🟢 Exemplo 1: if / else</h2>
+      <p>Verifica se a pessoa é maior de idade</p>
+      <input type="number" id="idade" placeholder="Digite sua idade" />
+      <button onclick="verificarIdade()">Verificar</button>
+      <p id="resultadoIdade"></p>
+    </section>
+
+    <!-- FOR -->
+    <section>
+      <h2>🔁 Exemplo 2: for</h2>
+      <p>Mostra os números de 1 a 10</p>
+      <button onclick="mostrarNumeros()">Mostrar</button>
+      <ul id="listaNumeros"></ul>
+    </section>
+
+    <!-- SWITCH/CASE -->
+    <section>
+      <h2>📅 Exemplo 3: switch / case</h2>
+      <p>Informa o dia da semana com base em um número de 1 a 7</p>
+      <input type="number" id="diaSemana" placeholder="Digite de 1 a 7" />
+      <button onclick="verificarDia()">Verificar</button>
+      <p id="mensagemDia"></p>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
