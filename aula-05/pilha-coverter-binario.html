@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="numero"></h1>
+    <script>
+      function decToBin(num) {
+        const binary = [];
+        while (num > 0) {
+          binary.push(num % 2);
+          num = Math.floor(num / 2);
+        }
+        return binary.reverse().join("");
+      }
+
+      console.log(decToBin(1));
+
+      const numeroElement = document.getElementById("numero");
+      if (numeroElement) {
+        numeroElement.innerHTML = decToBin(10);
+      } else {
+        console.error("Element with id 'numero' not found");
+      }
+    </script>
+  </body>
+</html>
